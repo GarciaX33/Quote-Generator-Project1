@@ -1,41 +1,47 @@
 // FSJS - Random Quote Generator
 
-// Create the array of quote objects and name it quotes
-var quotes [
+// Will create the array of quote objects and name it quotes
+var quotes = [
   {
-    quote:
-    author:
-    year:
+    quote: "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.",
+    author: "H.Jackson Brown Jr"
   },
   {
-    quote:
-    author:
-    year:
+    quote: "Every human life is worth the same, and worth saving.",
+    author: "J.K. Rowling"
   },
   {
-    quote:
-    author:
-    year:
+    quote: "Get busy living, or get busy dying.",
+    author: "Stephen King"
   },
   {
-    quote:
-    author:
-    year:
+    quote: "The goal isn’t to live forever, the goal is to create something that will.",
+    author: "Chuck Palahniuk"
   },
   {
-    quote:
-    author:
-    year:
+    quote: "Travel far enough, you meet yourself.",
+    author: "David Mitchel"
+  },
+  {
+    quote: "None of us really changes over time. We only become more fully what we are.",
+    author: "Anne Rice"
   }
 ];
 
 
-// Create the getRandomQuote function and name it getRandomQuote
+// Will create the getRandomQuote function and name it getRandomQuote
+function getRandomQuote(arr){
+  return arr[ Math.floor(Math.random() * 6)];
+}
 
 
 
-// Create the printQuote funtion and name it printQuote
-
+// Will create the printQuote function and name it printQuote
+function printQuote(){
+  var quoteObject = getRandomQuote(quotes);
+  var addQuote = '<p class="quote">' + quoteObject.quote +'</p> <p class="author">' + quoteObject.author + '</p>';
+  document.getElementById('quote-box').innerHTML = addQuote;
+}
 
 
 // This event listener will respond to "Show another quote" button clicks
