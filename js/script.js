@@ -20,7 +20,7 @@ var quotes = [
   },
   {
     quote: "Travel far enough, you meet yourself.",
-    author: "David Mitchel"
+    author: "David Mitchell"
   },
   {
     quote: "None of us really changes over time. We only become more fully what we are.",
